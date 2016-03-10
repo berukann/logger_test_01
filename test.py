@@ -1,7 +1,5 @@
-import logging, coloredlogs
-from helper import *
+import logging
 
-#coloredlogs.install()
 logger = logging.getLogger(__name__)
 
 def test_fun():

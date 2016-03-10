@@ -1,6 +1,7 @@
 import logging
 import os
 import uuid
+
 import coloredlogs
 
 
@@ -9,7 +10,8 @@ def init_logger_color():
     if os.environ.get('COLOREDLOGS_LOG_LEVEL') is None:
         os.environ['COLOREDLOGS_LOG_LEVEL'] = 'INFO'
     if os.environ.get('COLOREDLOGS_LOG_FORMAT') is None:
-        os.environ['COLOREDLOGS_LOG_FORMAT'] = '%(asctime)s [%(levelname)s] %(message)s'
+        os.environ['COLOREDLOGS_LOG_FORMAT'] = '%(asctime)s '
+        '[%(levelname)s] %(message)s'
     if os.environ.get('COLOREDLOGS_DATE_FORMAT') is None:
         os.environ['COLOREDLOGS_LOG_DATE_FORMAT'] = '%Y-%m-%d %H:%M:%S'
     coloredlogs.install()

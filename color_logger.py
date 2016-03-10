@@ -1,6 +1,7 @@
 from logging import getLogger
-from helper import init_logger_color, init_logger_file
 from test import test_fun
+
+from helper import init_logger_color, init_logger_file
 
 init_logger_color()
 init_logger_file('/Users/daicho/Work/201603/Python', 'vm_import_debug.log')
